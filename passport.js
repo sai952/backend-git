@@ -4,8 +4,8 @@ const GithubStrategy = require("passport-github2").Strategy;
 const passport = require("passport");
 
 const GOOGLE_CLIENT_ID =
-  "504338627339-gsl76fafori8d08imn85kndikfcid0kk.apps.googleusercontent.com";
-const GOOGLE_CLIENT_SECRET = "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";
+  "504338627339-fsgjjh8npppgkkq7sjs2gmnah239fch2.apps.googleusercontent.com";
+const GOOGLE_CLIENT_SECRET = "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";
 
 const GITHUB_CLIENT_ID = "d1c74fc23036380fd683";
 const GITHUB_CLIENT_SECRET = "c44622d187eebdfe6dbce7fb11c64214ac39e01c";
