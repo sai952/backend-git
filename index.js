@@ -15,14 +15,16 @@ app.use(passport.session());
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    //origin: "http://localhost:3000",
+    origin:"https://frontswasank.herokuapp.com",
     methods: "GET,POST,PUT,DELETE",
     credentials: true,
   })
 );
-
+var PORT = process.env.PORT || 4500;
 app.use("/auth", authRoute);
 
-app.listen("5000", () => {
-  console.log("Server is running!");
-});
+// app.listen("5000", () => {
+//   console.log("Server is running!");
+// });
+app.listen(PORT, () => console.log('EXPRESS Server Started at Port No: '+`${PORT}`));
